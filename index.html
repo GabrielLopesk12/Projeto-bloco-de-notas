@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bloco de Notas Web</title>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+        
+
+       <style>
+        body{
+            background-color:#E6f0f8;
+        }
+        .container{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                height: 400px;
+                width: 520px;
+
+            }
+            .botaocriar{
+                position: absolute;
+                text-decoration: none;
+                background-color: #ef624a;
+                color: aliceblue;
+                font-family: 'Nerko One', cursive;
+                border: solid 1px #ef624a;
+                top: 1.5em;
+                right: 10em;
+                width: 100px;
+                text-align: center;
+                
+            }            
+            
+            .container div:nth-child(1) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .botaoeditar{ 
+                position: absolute;
+                text-decoration: none;
+                background-color: #ef624a;
+                color: aliceblue;
+                font-family: 'Nerko One', cursive;
+                border: solid 1px #ef624a;
+                top: -22em;
+                right: -20em;
+                width: 120px;
+                height: 10px ;
+                text-align: center;}
+                
+            .bloco1, .bloco2 {
+                border: solid 1px black;
+                padding: 10px 0px;
+                margin: 10px 0px 10px 0;
+            }
+       </style>
+    </head>
+   <body>
+    <div class="container">
+        <div><h1>Bloco de Notas</h1></div>
+        <div class="bloco1">as</div>
+        <div class="bloco2">as</div>
+        
+    </div>
+   </body>
+    <aside>
+        <a href="/Projeto/partedeanotacoes.html" class="botaocriar">Criar
+            <a href="/Projeto/editaranotacao.html" class="botaoeditar">Editar
+    </aside>
+            
+        </body>
+        </html>

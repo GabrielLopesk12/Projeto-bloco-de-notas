@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bloco de Notas Web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <a href="./index.html">Voltar</a>
+        <script src="partejs.js"></script>
+        
+        <style>
+            *{
+                font-family: 'Nerko One', cursive;}
+            body{
+                background-color: #E6f0f8;
+            }
+            .botao{
+                width: 100px;
+                border:solid 4px #ef624a;
+                background-color: #ef624a;
+                text-decoration: none;
+                position: absolute;
+                right: 27em;
+                bottom: 3.5em;
+                font-family: 'Nerko One', cursive;
+                color: white;
+            }
+            
+            .anotacaobdn{
+                width: 100%;
+                height: 300px;
+                margin: 0;
+                border: solid 1px #92bcde;
+                border-radius: 5px;
+                
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                height: 400px;
+                width: 520px;
+            }
+
+            .container div:nth-child(1) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .container div:nth-child(2) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .container div:nth-child(3) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .container div:nth-child(4) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .titulobdn{
+                border: solid 1px #92bcde;
+                width: 100%;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .titulo::after {
+                content: "*";
+                color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="db.json" method="post">  
+            <div class="container" > 
+                <div>
+                    <h3>Editar anotações</h3>
+                </div>
+                <div class="titulo">
+                <p>Título</p>
+        </div>
+        <div>
+            <input class="titulobdn"type="text" placeholder="Digite seu título..." required>
+        </div>
+        <div>
+            <p>
+                Anotação
+            </p>
+        </div>
+        <div>   
+            <input class="anotacaobdn" type="text" placeholder="Digite sua anotação..." >
+            
+        </div>
+    </div>
+    <div>
+        <button onclick="editar()" id="btn" class="botao destaque">Salvar</button>
+    </div>
+    </form>
+    <script>
+            
+        </script>
+    </body>
+</html>
